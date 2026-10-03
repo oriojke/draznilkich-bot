@@ -13,7 +13,13 @@ func TestLastWord(t *testing.T) {
 		{"", ""},
 		{" \t\n", ""},
 		{"Ну ПРИВЕТ!  ", "привет"},
-		{"первая\n«последняя»", "последняя"},
+		{"первая\n«последняя»", "последня"},
+		{"даааааа", "да"},
+		{"Ну ДдДАаАа!!!", "да"},
+		{"DAAAA", "da"},
+		{"неееет", "нет"},
+		{"мама", "мама"},
+		{"111аа--бб", "111а--б"},
 		{"кто-то", "кто-то"},
 		{"привет пока", "пока"},
 	} {
@@ -52,7 +58,7 @@ func TestHandleMessageStickerReply(t *testing.T) {
 	}))
 	defer server.Close()
 	b := &Bot{baseURL: server.URL + "/", client: server.Client()}
-	msg := &message{ID: 123, Text: "Ну ПРИВЕТ!"}
+	msg := &message{ID: 123, Text: "Ну ПРИВЕЕЕТ!"}
 	msg.Chat.ID = 42
 	if err := b.handleMessage(context.Background(), msg); err != nil {
 		t.Fatal(err)
