@@ -10,7 +10,9 @@ import (
 // Use file_id, not file_unique_id or a sticker pack URL.
 var stickers = map[string]string{
 	"да": "CAACAgIAAxkBAAMIasGD61eoGtC5MPOjlFjVgIQgu9AAAgVgAAKV6QhIoAlIGw-wyGY9BA",
+	"дa": "CAACAgIAAxkBAAMIasGD61eoGtC5MPOjlFjVgIQgu9AAAgVgAAKV6QhIoAlIGw-wyGY9BA",
 	"da": "CAACAgIAAxkBAAMIasGD61eoGtC5MPOjlFjVgIQgu9AAAgVgAAKV6QhIoAlIGw-wyGY9BA",
+	"dа": "CAACAgIAAxkBAAMIasGD61eoGtC5MPOjlFjVgIQgu9AAAgVgAAKV6QhIoAlIGw-wyGY9BA",
 	// "нет":  "CAACAgIAAxkBAAMXasGEfdvpZszHNUmykEPXucaXBDcAArIRAALMHilIrxZ-cC_u7Kk9BA",
 	// "net":  "CAACAgIAAxkBAAMXasGEfdvpZszHNUmykEPXucaXBDcAArIRAALMHilIrxZ-cC_u7Kk9BA",
 	// "nyet": "CAACAgIAAxkBAAMXasGEfdvpZszHNUmykEPXucaXBDcAArIRAALMHilIrxZ-cC_u7Kk9BA",
